@@ -1,4 +1,4 @@
-# MQTT Fuzzer/ FuzzTT
+# FuzzTT/ MQTT Fuzzer
 
 #### Inspiration
 
@@ -16,9 +16,9 @@ Use this tool, if you are interested in fuzzing a MQTT client or a broker target
 
 **Note**
 
-+ FuzzTT currently supports unencrypted TCP (mqtt) connections. TLS support (mqtts) is being worked on and an update will be pushed in the coming weeks.
++ MQTT Fuzzer  currently supports unencrypted TCP (mqtt) connections. TLS support (mqtts) is being worked on and an update will be pushed in the coming weeks.
 
-+ FuzzTT can be preconfigured using config.json. These preconfigured settings can be over ridden during runtime by supplying relevant command line arguments.
++ MQTT Fuzzer can be preconfigured using config.json. These preconfigured settings can be over ridden during runtime by supplying relevant command line arguments.
 
 #### Installation
 
