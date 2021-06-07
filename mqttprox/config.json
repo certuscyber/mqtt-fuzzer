@@ -1,0 +1,17 @@
+{
+	"RemoteHost":"broker.emqx.io:1883",
+	"LocalHost":"127.0.0.1",
+	"LocalProxyPort":1990,
+	"LocalFuzzPort":1989,
+	"TLS":{
+		"Country":["US"],
+		"Org":["Certus"],
+		"CommonName":"*.domain.com"
+	},
+	"CACertFile":"",
+	"CAKeyFile":"",
+	"ClientCertFile":"",
+	"ClientKeyFile":"",
+	"Delay":200,
+	"PayloadLength":15
+}
