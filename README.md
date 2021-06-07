@@ -1,16 +1,16 @@
-# FuzzTT
+# MQTT Fuzzer/ FuzzTT
 
 #### Inspiration
 
-The idea is to have a plug and play solution for fuzzing MQTT. Most solutions out there need to be customized or are expensive to purchase. FuzzTT is a TCP proxy at it's core with the ability to capture MQTT traffic (supports 5.0 and 3.1) and sends fuzz controlled packets to a remote broker or client.
+The idea is to have a plug and play solution for fuzzing MQTT. Most solutions out there need to be customized or are expensive to purchase. MQTT fuzzer is a TCP proxy at it's core with the ability to capture MQTT traffic (supports 5.0 and 3.1) and sends fuzz controlled packets to a remote broker or client.
 
 Every fuzz packet that receives a response from the target device is logged and is stored in the ```output``` folder. 
 
-If the length of the payloads is not set to a specific value, FuzzTT generates payloads of random lengths for the target device. However, if the length of the payload to be used is specified, FuzzTT increases the frequency of payloads for the specified length by close to 75% while the packets are of random lengths. These packets can also be throttled to support connections with low bandwidths. 
+If the length of the payloads is not set to a specific value, MQTT fuzzer generates payloads of random lengths for the target device. However, if the length of the payload to be used is specified, FuzzTT increases the frequency of payloads for the specified length by close to 75% while the packets are of random lengths. These packets can also be throttled to support connections with low bandwidths. 
 
 <img src="./mqttprox/assets/arch.png">
 
-> The above image contains an overview of the FuzzTT internals.
+> The above image contains an overview of the MQTT fuzzer internals.
 
 Use this tool, if you are interested in fuzzing a MQTT client or a broker target. If you have the need to customize the implemented payload generation, take a look at ```fuzzit()``` in the ```fuzzer/fuzzer.go``` file. The possibilities are endless. 
 
