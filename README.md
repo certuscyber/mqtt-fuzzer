@@ -6,7 +6,7 @@ The idea is to have a plug and play solution for fuzzing MQTT. Most solutions ou
 
 Every fuzz packet that receives a response from the target device is logged and is stored in the ```output``` folder. 
 
-If the length of the payloads is not set to a specific value, MQTT fuzzer generates payloads of random lengths for the target device. However, if the length of the payload to be used is specified, FuzzTT increases the frequency of payloads for the specified length by close to 75% while the packets are of random lengths. These packets can also be throttled to support connections with low bandwidths. 
+If the length of the payloads is not set to a specific value, MQTT fuzzer generates payloads of random lengths for the target device. However, if the length of the payload to be used is specified, MQTT Fuzzer  increases the frequency of payloads for the specified length by close to 75% while the packets are of random lengths. These packets can also be throttled to support connections with low bandwidths. 
 
 <img src="./mqttprox/assets/arch.png">
 
